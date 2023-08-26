@@ -25,22 +25,37 @@
       // return firstNum * secondNum;
       // }
       // alert(multiply());
-      let someString = prompt("get string", "");
-      function capitalize() {
-        const toLower = someString.toLowerCase(); // lowercases eveyrthing
-        const firstLetter = Array.from(toLower)[0]; // gets the first letter
-        const toUpperFirst = firstLetter.toUpperCase(); // uppercases first letter
 
-        const firstUpper = toLower.replace(`${firstLetter}`, `${toUpperFirst}`); // swaps out first letter
 
-        return firstUpper;
+      // let someString = prompt("get string", "");
+      // function capitalize() {
+      //   const toLower = someString.toLowerCase(); // lowercases eveyrthing
+      //   const firstLetter = Array.from(toLower)[0]; // gets the first letter
+      //   const toUpperFirst = firstLetter.toUpperCase(); // uppercases first letter
 
-        //      const stringLength = someString.length; // get total string length
-        //      for(let i = 1; i < stringLength; i++){
+      //   const firstUpper = toLower.replace(`${firstLetter}`, `${toUpperFirst}`); // swaps out first letter
 
-        //      }
+      //   return firstUpper;
+
+      //   //      const stringLength = someString.length; // get total string length
+      //   //      for(let i = 1; i < stringLength; i++){
+
+      //   //      }
+      // }
+      // console.log(capitalize());
+
+    let anotherString = prompt("write a word", "");
+
+
+  lastletter();
+      function lastletter (){
+
+        const stringLength = anotherString.length; // gets total length
+        const minusED = stringLength - 1;          // deducts one number cause arrays start with 0
+        const lastChara = Array.from(anotherString)[`${minusED}`]; // show the final letter
+
+        alert(`last letter of ${anotherString} is ${lastChara}`);
       }
-      console.log(capitalize());
     </script>
   </body>
 </html>
