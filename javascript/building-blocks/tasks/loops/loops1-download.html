@@ -31,6 +31,40 @@
 
     // Add your code here
 
+    // for (let i = 0; i < myArray.length; i++ ){
+    //   let listitem = document.createElement('li');
+    //   listitem.textContent = myArray[i];
+    //   list.appendChild(listitem);
+    // }
+
+    // for (const item in myArray){
+    //   let listitem = document.createElement('li');
+    //   listitem.textContent = myArray[item];
+    //   list.appendChild(listitem);
+    // }
+
+    // let i = 0;
+    // while(i < myArray.length ){
+    //     let listitem = document.createElement('li');
+    //     listitem.textContent = myArray[i];
+    //     list.appendChild(listitem);
+
+    //     i++;
+    // }
+
+
+    let i = 0;
+
+    do {
+        let listitem =  document.createElement('li');
+        listitem.textContent = myArray[i];
+        list.appendChild(listitem);
+
+        i++;
+    } while (i < myArray.length)
+
+
+
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
