@@ -13,7 +13,7 @@
         box-sizing: border-box;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
+    <!-- <link rel="stylesheet" href="../styles.css" /> -->
   </head>
 
   <body>
@@ -26,22 +26,36 @@
 
   </body>
   <script>
-    let i = 500;
     const para = document.createElement('p');
+    let i = 500;
 
-    function isPrime(num) {
+      function isPrime(num) {
       for(let i = 2; i < num; i++) {
         if(num % i === 0) {
           return false;
         }
       }
+          return true;
 
-      return true;
     }
-
 
     // Add your code here
 
+    isPrime(i);
+
+    do {
+      if (i < 2){
+        false;
+      }else if (isPrime(i)){
+          const prime = document.createTextNode(i);
+          const spacer = document.createTextNode(` = `);
+          para.appendChild(prime);
+          para.appendChild(spacer);
+
+      }
+
+      i--;
+    }while (i > 1)
 
     // Don't edit the code below here!
     const section = document.querySelector('section');
